@@ -1,0 +1,86 @@
+.container{
+    height:100%;
+    background: #f2f2f2;
+
+}
+
+.userInfo{
+    margin-top: 40rpx;
+    width: 750rpx;
+    height: 240rpx;
+    background: white;
+    display:flex;
+    flex-direction:row;
+}
+
+.userInfo-avatar{
+    margin: 40rpx;
+    height: 160rpx;
+    width:160rpx;
+    border: solid;
+    border-radius: 5px;
+}
+
+.userInfo-nameAndNum{
+    font-size: 16px;
+    line-height: 120rpx;
+}
+
+.postBoxList{
+    margin-top: 80rpx;
+    width: 750rpx;
+    background: white;
+    display:flex;
+    flex-direction:column;
+
+}
+
+.postBox{
+    height: 120rpx;
+    width: 750rpx;
+    border: solid #f2f2f2;
+    display:flex;
+    flex-direction:row;
+}
+
+.postBox-boxImage{
+    height: 100rpx;
+    width: 100rpx;
+    margin: 10rpx;
+}
+
+.postBox-arrow{
+    height:25rpx;
+    width:25rpx;
+    margin-top: 47.5rpx;
+    margin-bottom: 47.5rpx;
+}
+
+.postBox-id{
+    text-align: center;
+    width: 580rpx;
+    margin-top: 35rpx;
+    margin-bottom: 25rpx;
+}
+
+.logDetail{
+    height: 120rpx;
+    width: 750rpx;
+    border: solid #f2f2f2;
+    display:flex;
+    flex-direction:row;
+}
+
+.logDetail-type{
+    height: 100rpx;
+    width: 100rpx;
+    margin: 10rpx;
+}
+
+.logDetail-value{
+    text-align: center;
+    font-weight: bolder;
+    width: 630rpx;
+    margin-top: 35rpx;
+    margin-bottom: 25rpx;
+}

@@ -1,0 +1,52 @@
+<view class="container" id="{{scanType}}Container">
+
+    <view id="cpTitle">
+        <image wx:if="{{scanType==='QR_CODE'}}"
+               src="/images/scan/qrCode.png"
+        />
+        <image wx:elif="{{scanType==='BAR_CODE'}}"
+               src="/images/scan/barCode.png"
+        />
+        <image wx:else
+               src="/images/scan/txtCode.png"
+        />
+    </view>
+
+    <view class="cpInputDiv">
+
+        <view class="cpInputDiv-Item">
+            <view class="cpInputDiv-Item-icon">
+                <image src="/images/scan/customize/nameIcon.png"/>
+                <text>Name</text>
+            </view>
+            <textarea bindblur="blurName"/>
+        </view>
+
+        <view class="cpInputDiv-Item">
+            <view class="cpInputDiv-Item-icon">
+                <image src="/images/scan/customize/typeIcon.png"/>
+                <text>Type</text>
+            </view>
+            <text style="margin: 27px 100px 27px 100px;">UNSUPPORTED</text>
+            <!--<picker-view indicator-style="height: 50px;" value="{{value}}" bindchange="bindChange">
+                <picker-view-column>
+                    <view wx:for="{{boxList}}">{{item}}</view>
+                </picker-view-column>
+            </picker-view>-->
+        </view>
+
+        <view wx:if="{{scanType==='TXT_CODE'}}" class="cpInputDiv-Item">
+            <view class="cpInputDiv-Item-icon">
+                <image src="/images/scan/customize/txtIcon.png"/>
+                <text>Text</text>
+            </view>
+            <textarea bindblur="blurText"/>
+        </view>
+
+
+    </view>
+    <view class="submitButton" bindtap="tapOnSubmitButton">
+        <text class="submitButton-text">Submit</text>
+        <image class="submitButton-type" src="/images/scan/customize/submit.png"/>
+    </view>
+</view>

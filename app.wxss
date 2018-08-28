@@ -1,0 +1,9 @@
+text{
+    font-family: "Microsoft YaHei UI", 宋体, serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}

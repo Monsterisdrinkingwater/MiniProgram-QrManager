@@ -1,0 +1,32 @@
+<view class="container">
+    <view class="userInfo">
+        <image class="userInfo-avatar" src="{{userInfo.avatarUrl}}"/>
+        <text class="userInfo-nameAndNum">用户名: {{userInfo.nickName}}\n二维码数量: {{numOfCode}}</text>
+    </view>
+
+    <view wx:if="{{!codeList}}" class="nonPostBox">
+
+    </view>
+
+    <view wx:else class="postBoxList">
+        <view wx:for="{{codeList}}"
+              class="postBox" catchtap="tapOnBox" data-boxindex="{{index}}">
+
+            <image wx:if="{{item.scanType==='QR_CODE'}}"
+                   class="postBox-boxImage"
+                   src="/images/account/qrCode.png"
+            />
+            <image wx:elif="{{item.scanType==='BAR_CODE'}}"
+                   class="postBox-boxImage"
+                   src="/images/account/barCode.png"
+            />
+            <text class="postBox-id">{{item.customizedName}}</text>
+            <image class="postBox-arrow" src="/images/account/rightArrow.png"/>
+        </view>
+        <view wx:for="{{logList}}" class="logDetail">
+            <image class="logDetail-type" src="/images/account/processing.png"/>
+            <text class="logDetail-value">{{item.type}}: {{item.boxId}}</text>
+        </view>
+    </view>
+</view>
+

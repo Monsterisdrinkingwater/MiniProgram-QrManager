@@ -1,0 +1,25 @@
+<!--loginPage.wxml-->
+<view class="container">
+
+    <view wx:if="{{!hasUserInfo&&canIUse}}" class="declaration" >
+        <image id="title-icon" src="/images/qrIcon.png"/>
+        <text class="declare-content">
+            我们需要您的授权
+
+            根据我们的隐私协议，我们不会使用您的个人信息用于其他用途。\n
+        </text>
+        <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+            授权
+        </button>
+    </view>
+
+    <view wx:else class="userInfo">
+        <image class="userInfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"/>
+        <text class="userInfo-nickname">{{userInfo.nickName}}</text>
+        <button class="userInfo-enterButton" bindtap="bindViewTap">
+            进入
+        </button>
+    </view>
+
+
+</view>

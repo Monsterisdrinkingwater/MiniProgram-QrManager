@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container page">
+    <view class="panel">
+        <view class="header">
+            {{code.customizedName}}
+        </view>
+        <view class="barcode">
+            <canvas canvas-id="barcode"/>
+        </view>
+        <view class="qrcode">
+            <canvas canvas-id="qrcode"/>
+        </view>
+    </view>
+
+    <view id="deleteButton" catchtap="tapOnDeleteBottom">
+        <view id="deleteButton-icon">X</view>
+        <text id="deleteButton-text">Delete</text>
+    </view>
+</view>

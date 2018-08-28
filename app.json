@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/loginPage/loginPage",
+    "pages/scanPage/scanPage",
+    "pages/scanPage/customizePage/customizePage",
+    "pages/accountPage/accountPage",
+    "pages/accountPage/codePage/codePage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#444444"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/scanPage/scanPage",
+        "text": "扫描二维码",
+        "iconPath": "images/tab/scanCode.png",
+        "selectedIconPath": "images/tab/selectedScanCode.png"
+      },
+      {
+        "pagePath": "pages/accountPage/accountPage",
+        "text": "我的二维码",
+        "iconPath": "images/tab/account.png",
+        "selectedIconPath": "images/tab/selectedAccount.png"
+      }
+    ]
+  }
+}

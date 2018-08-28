@@ -1,0 +1,40 @@
+.declaration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 475rpx;
+    border: #aaaaaa;
+}
+
+#title-icon{
+    margin-top: 100px;
+    width: 200rpx;
+    height: 200rpx;
+}
+
+.declare-content{
+    font-size: 35rpx;
+    margin-bottom: 20px;
+
+}
+
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200rpx;
+}
+
+.userInfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    border-radius: 50%;
+}
+
+.userInfo-nickname {
+    color: #aaa;
+}
+
+.userInfo-enterButton {
+    margin-top: 150px;
+}

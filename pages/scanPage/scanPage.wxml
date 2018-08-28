@@ -1,0 +1,32 @@
+<view class="container">
+
+    <text class="scanDeclaration">Hello!</text>
+
+    <view class="bottomContainer">
+
+        <view id="qrButton"
+              class="bottomButton">
+            <view class="bottomButton-tapItem" bindtap="tapQrCode">
+                <image src="/images/scan/qrCode.png" />
+            </view>
+            <text class="bottomButton-txt">QrCode</text>
+        </view>
+
+        <view id="barButton"
+              class="bottomButton">
+            <view class="bottomButton-tapItem" bindtap="tapBarCode">
+                <image src="/images/scan/barCode.png" />
+            </view>
+            <text class="bottomButton-txt">BarCode</text>
+        </view>
+
+        <view id="txtButton"
+              class="bottomButton">
+            <view class="bottomButton-tapItem" bindtap="tapText">
+                <image src="/images/scan/txtCode.png" />
+            </view>
+            <text class="bottomButton-txt">Text</text>
+        </view>
+    </view>
+
+</view>

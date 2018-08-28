@@ -1,0 +1,78 @@
+.container {
+    height: 1200rpx;
+}
+
+text {
+    font-weight: bolder;
+}
+
+#QR_CODEContainer {
+    background: #ffb3b3;
+}
+
+#BAR_CODEContainer {
+    background: #adebad;
+}
+
+#TXT_CODEContainer {
+    background: #99ffe6;
+}
+
+#cpTitle image {
+    margin: 37.5rpx;
+    height: 200rpx;
+    width: 200rpx;
+}
+
+.cpInputDiv-Item {
+    display: flex;
+    flex-direction: row;
+    width: 750rpx;
+    height: 150rpx;
+    margin: 50rpx 0 50rpx;
+    background: #f2f2f2;
+
+}
+
+.cpInputDiv-Item textarea {
+    height: 150rpx;
+    margin: 0 40px 0 40px;
+    line-height: 150rpx;
+
+}
+
+.cpInputDiv-Item-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cpInputDiv-Item-icon image {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.submitButton {
+    height: 120rpx;
+    width: 750rpx;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    position: fixed;
+    background: white;
+    border: solid #f2f2f2;
+}
+
+.submitButton-type {
+    height: 100rpx;
+    width: 100rpx;
+    margin: 10rpx;
+}
+
+.submitButton-text {
+    text-align: center;
+    font-weight: bolder;
+    width: 630rpx;
+    margin-top: 35rpx;
+    margin-bottom: 25rpx;
+}
